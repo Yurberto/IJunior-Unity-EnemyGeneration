@@ -25,6 +25,6 @@ public class Character : MonoBehaviour
 
     private void Move()
     {
-        transform.position += _direction.normalized * _moveSpeed * Time.deltaTime;
+        transform.position += _direction.normalized * (_moveSpeed * Time.deltaTime);
     }
 }
