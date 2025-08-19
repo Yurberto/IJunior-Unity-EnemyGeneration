@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Manager : MonoBehaviour
+public class SpawnSystem : MonoBehaviour
 {
     [SerializeField] private List<Spawner> _spawners;
     [SerializeField, Range(1, 10)] private float _spawnDelay;
