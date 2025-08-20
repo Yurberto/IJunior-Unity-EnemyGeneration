@@ -30,6 +30,5 @@ public class SpawnSystem : MonoBehaviour
         int randomIndex = Random.Range(0, _spawners.Count);
 
         _spawners[randomIndex].Spawn();
-
     }
 }

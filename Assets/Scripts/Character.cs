@@ -4,18 +4,18 @@ public class Character : MonoBehaviour
 {
     [SerializeField, Range(0, 100)] private float _moveSpeed = 10;
 
-    private Vector3 _direction;
+    private Transform _target;
 
-    public void Initialize(Vector3 direction)
+    public void Initialize(Transform target)
     {
-        _direction = direction;
+        _target = target;
     }
 
     private void Update()
     {
-        if (_direction == null)
+        if (_target == null)
         {
-            Debug.Log("Direction is not init!!!");
+            Debug.Log("Target is not init!!!");
             Destroy(gameObject);
             return;
         }
@@ -25,6 +25,6 @@ public class Character : MonoBehaviour
 
     private void Move()
     {
-        transform.position += _direction.normalized * (_moveSpeed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, _target.position, _moveSpeed * Time.deltaTime);
     }
 }
