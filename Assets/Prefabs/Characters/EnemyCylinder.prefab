@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7286369873081983831}
   - component: {fileID: 2007186533615514345}
   m_Layer: 0
-  m_Name: EnemuCylinder
+  m_Name: EnemyCylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -3,13 +3,13 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
     [SerializeField] private Transform[] _wayPoints;
-    [SerializeField, Range (-10, 10)] private float _speed = 5;
+    [SerializeField, Range (-10, 10)] private float _moveSpeed = 5;
 
     private int _currentWaypoint;
 
     private void Update()
     {
-        if (_speed == 0)
+        if (_moveSpeed == 0)
             return;
 
         if (transform.position == _wayPoints[_currentWaypoint].position)
@@ -20,6 +20,6 @@ public class Target : MonoBehaviour
 
     private void Move()
     {
-        transform.position = Vector3.MoveTowards(transform.position, _wayPoints[_currentWaypoint].position, _speed * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, _wayPoints[_currentWaypoint].position, _moveSpeed * Time.deltaTime);
     }
 }

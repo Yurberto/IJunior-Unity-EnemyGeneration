@@ -21,6 +21,7 @@ public class Character : MonoBehaviour
         }
 
         Move();
+        transform.LookAt(_target.position);
     }
 
     private void Move()

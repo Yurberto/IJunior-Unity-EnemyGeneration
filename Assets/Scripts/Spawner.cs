@@ -5,9 +5,14 @@ public class Spawner : MonoBehaviour
     [SerializeField] private Character _prefab;
     [SerializeField] private Transform _target;
 
+    public void Initialize(Transform target)
+    {
+        _target = target;
+    }
+
     public void Spawn()
     {
-        var newObject = Instantiate(_prefab, transform.position, Quaternion.identity);
-        newObject.Initialize(_target);
+        var spawnedObject = Instantiate(_prefab, transform.position, Quaternion.identity);
+        spawnedObject.Initialize(_target);
     }
 }
