@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody), typeof(Collider))] 
 public class Character : MonoBehaviour
 {
     [SerializeField, Range(0, 100)] private float _moveSpeed = 10;

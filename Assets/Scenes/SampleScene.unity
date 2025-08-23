@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 895f4c1dac897a844b6bd62559a4bef4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _prefab: {fileID: 7404529856672090465, guid: ddb5e26b066d10a41848c0974e387b71, type: 3}
+  _prefab: {fileID: -3821664157700992349, guid: 60770bdb4dc667c45bea53db0339dc05, type: 3}
   _target: {fileID: 155374402}
 --- !u!4 &420411603
 Transform:
