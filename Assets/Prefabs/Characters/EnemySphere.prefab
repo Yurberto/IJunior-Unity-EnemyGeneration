@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8633746399989409941}
   - component: {fileID: 7027761092423702738}
   - component: {fileID: 7404529856672090465}
+  - component: {fileID: -4066053533155392775}
   m_Layer: 0
   m_Name: EnemySphere
   m_TagString: Untagged
@@ -146,4 +147,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8cc90435c417d47993be0036e60bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 2
+--- !u!114 &-4066053533155392775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535955054422215985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9800d144caa2045b9d00d44f5c2bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 5

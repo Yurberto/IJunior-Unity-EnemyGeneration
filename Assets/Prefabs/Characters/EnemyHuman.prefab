@@ -990,6 +990,7 @@ GameObject:
   - component: {fileID: -3821664157700992349}
   - component: {fileID: -5798574016501091888}
   - component: {fileID: 2874831764714987130}
+  - component: {fileID: 2678366657013193629}
   m_Layer: 0
   m_Name: EnemyHuman
   m_TagString: Untagged
@@ -1048,7 +1049,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b8cc90435c417d47993be0036e60bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 1
 --- !u!54 &-5798574016501091888
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1099,6 +1099,19 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2678366657013193629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782702501690864755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9800d144caa2045b9d00d44f5c2bbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moveSpeed: 3
 --- !u!1 &1789272960074739661
 GameObject:
   m_ObjectHideFlags: 0

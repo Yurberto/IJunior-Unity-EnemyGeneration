@@ -1,11 +1,15 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Rigidbody), typeof(Collider))] 
+[RequireComponent(typeof(Rigidbody), typeof(Collider), typeof(Mover))] 
 public class Character : MonoBehaviour
 {
-    [SerializeField, Range(0, 100)] private float _moveSpeed = 10;
-
+    private Mover _mover;
     private Transform _target;
+
+    private void Awake()
+    {
+        _mover = GetComponent<Mover>();
+    }
 
     public void Initialize(Transform target)
     {
@@ -21,12 +25,7 @@ public class Character : MonoBehaviour
             return;
         }
 
-        Move();
         transform.LookAt(_target.position);
-    }
-
-    private void Move()
-    {
-        transform.position = Vector3.Lerp(transform.position, _target.position, _moveSpeed * Time.deltaTime);
+        _mover.Move(_target.position);
     }
 }
